@@ -1,0 +1,309 @@
+{
+  "construction": "interleave",
+  "n_docs_loaded": 223834,
+  "n_doc_scorer_pairs": 445738,
+  "features": {
+    "gemma_H": {
+      "n": 221904,
+      "r_pooled": 0.4048097266147273,
+      "rho_pooled": 0.5763196523279019,
+      "spearman_pooled": 0.36096390848518506,
+      "r_within": 0.3813920596599699,
+      "rho_within": 0.5521851048627712,
+      "spearman_within": 0.34183494972095885,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.5735342290137758,
+        0.5790917493157487
+      ]
+    },
+    "gemma_H_R2": {
+      "n": 221904,
+      "r_pooled": 0.12429296235477146,
+      "rho_pooled": 0.22110422552934333,
+      "spearman_pooled": 0.08311881379649573,
+      "r_within": 0.1231501499235207,
+      "rho_within": 0.21929418774846163,
+      "spearman_within": 0.08492498906279375,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.21714329022390988,
+        0.22505787982862477
+      ]
+    },
+    "gemma_H_window_drift": {
+      "n": 221904,
+      "r_pooled": 0.19192056631481016,
+      "rho_pooled": 0.32203583315655293,
+      "spearman_pooled": 0.16073366760998792,
+      "r_within": 0.18959891619017746,
+      "rho_within": 0.31876107755274197,
+      "spearman_within": 0.16026111911504692,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.31830162760291547,
+        0.325760045227804
+      ]
+    },
+    "gemma_H_window_mean": {
+      "n": 221904,
+      "r_pooled": 0.27500484503895234,
+      "rho_pooled": 0.4313785098291932,
+      "spearman_pooled": 0.2378928112699061,
+      "r_within": 0.2600567016301065,
+      "rho_within": 0.41276984010906353,
+      "spearman_within": 0.2246652303026468,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.4279859782094268,
+        0.43475888520036526
+      ]
+    },
+    "gemma_H_window_var": {
+      "n": 221904,
+      "r_pooled": 0.16224659738735134,
+      "rho_pooled": 0.27919479007651266,
+      "spearman_pooled": 0.048664631421465016,
+      "r_within": 0.15997218267899618,
+      "rho_within": 0.27582072237203975,
+      "spearman_within": 0.056484471533983595,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.2753539577938915,
+        0.28302670934898594
+      ]
+    },
+    "gemma_S": {
+      "n": 196971,
+      "r_pooled": 0.03233130579169767,
+      "rho_pooled": 0.06263746068788005,
+      "spearman_pooled": 0.0427752601962147,
+      "r_within": 0.030995767743161182,
+      "rho_within": 0.06012782731593669,
+      "spearman_within": 0.04108717683215569,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.05823738349125935,
+        0.06703510427020676
+      ]
+    },
+    "gemma_S_R2": {
+      "n": 221900,
+      "r_pooled": 0.006591731591869383,
+      "rho_pooled": 0.013097130415416632,
+      "spearman_pooled": 0.007188332710696724,
+      "r_within": 0.006335611108137075,
+      "rho_within": 0.012591447700356246,
+      "spearman_within": 0.009564820214275847,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.008936884207116637,
+        0.017256923234292936
+      ]
+    },
+    "gemma_S_window_drift": {
+      "n": 35061,
+      "r_pooled": 0.011177013252969685,
+      "rho_pooled": 0.02210693697834979,
+      "spearman_pooled": 0.010226435855457714,
+      "r_within": 0.011202672693763675,
+      "rho_within": 0.022157126353158547,
+      "spearman_within": 0.010122397047208468,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.011642234871936712,
+        0.032566797097815355
+      ]
+    },
+    "gemma_S_window_mean": {
+      "n": 122329,
+      "r_pooled": 0.008438425876891156,
+      "rho_pooled": 0.016735629385707895,
+      "spearman_pooled": 0.009507375043089211,
+      "r_within": 0.007901093336196523,
+      "rho_within": 0.015678310874817213,
+      "spearman_within": 0.009373173616419407,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.011132853712503804,
+        0.02233735426218941
+      ]
+    },
+    "gemma_S_window_var": {
+      "n": 122329,
+      "r_pooled": 0.001987248624680934,
+      "rho_pooled": 0.003966614599953471,
+      "spearman_pooled": 0.011948256266717111,
+      "r_within": 0.0015836576225583502,
+      "rho_within": 0.0031623072331620323,
+      "spearman_within": 0.09500280531326905,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        -0.0016372415436070012,
+        0.00957022162185699
+      ]
+    },
+    "mistral_H": {
+      "n": 223834,
+      "r_pooled": 0.3759991226601098,
+      "rho_pooled": 0.5465107011597806,
+      "spearman_pooled": 0.33440029475144384,
+      "r_within": 0.3512206266882083,
+      "rho_within": 0.5198568164978906,
+      "spearman_within": 0.3127437511427799,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.5435987114444455,
+        0.549409534936365
+      ]
+    },
+    "mistral_H_R2": {
+      "n": 223834,
+      "r_pooled": 0.10770530640945068,
+      "rho_pooled": 0.19446563230534647,
+      "spearman_pooled": 0.06761095657307892,
+      "r_within": 0.10626896800497983,
+      "rho_within": 0.1921213937630789,
+      "spearman_within": 0.06901030001281942,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.19047636408318258,
+        0.19844847806100047
+      ]
+    },
+    "mistral_H_window_drift": {
+      "n": 223831,
+      "r_pooled": 0.16670137343932406,
+      "rho_pooled": 0.28576528190397915,
+      "spearman_pooled": 0.14048489493769045,
+      "r_within": 0.1648159910887544,
+      "rho_within": 0.28299060512502194,
+      "spearman_within": 0.140205783640426,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.2819563299312477,
+        0.28956522606044016
+      ]
+    },
+    "mistral_H_window_mean": {
+      "n": 223834,
+      "r_pooled": 0.2466606315709392,
+      "rho_pooled": 0.3957141588085889,
+      "spearman_pooled": 0.2132945026398328,
+      "r_within": 0.23075162155173337,
+      "rho_within": 0.3749767499973738,
+      "spearman_within": 0.19901549124840578,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.3922144095586772,
+        0.39920245233208224
+      ]
+    },
+    "mistral_H_window_var": {
+      "n": 223834,
+      "r_pooled": 0.158154474987578,
+      "rho_pooled": 0.2731146464538322,
+      "spearman_pooled": 0.04166244615114429,
+      "r_within": 0.15642326434414924,
+      "rho_within": 0.27052943185618583,
+      "spearman_within": 0.04937291878199213,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.26927659690840294,
+        0.27694402079012786
+      ]
+    },
+    "mistral_S": {
+      "n": 195552,
+      "r_pooled": 0.025483179841608947,
+      "rho_pooled": 0.04969984948079783,
+      "spearman_pooled": 0.0331742743258869,
+      "r_within": 0.023765084513009214,
+      "rho_within": 0.04642683145286974,
+      "spearman_within": 0.030863650950844645,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.04527764259124139,
+        0.0541201085633726
+      ]
+    },
+    "mistral_S_R2": {
+      "n": 223833,
+      "r_pooled": 0.009954382040889847,
+      "rho_pooled": 0.019712537948049273,
+      "spearman_pooled": 0.010734241627015499,
+      "r_within": 0.009620146922110238,
+      "rho_within": 0.019056963059696966,
+      "spearman_within": 0.012900415006725237,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.01557108116322926,
+        0.023853318374814355
+      ]
+    },
+    "mistral_S_window_drift": {
+      "n": 30784,
+      "r_pooled": 0.002034129800121072,
+      "rho_pooled": 0.004060001031156147,
+      "spearman_pooled": -0.0017993064748170352,
+      "r_within": 0.001525017224483889,
+      "rho_within": 0.003045390176493352,
+      "spearman_within": -0.0026171747288964587,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        -0.007111234310853262,
+        0.015230223100547795
+      ]
+    },
+    "mistral_S_window_mean": {
+      "n": 116669,
+      "r_pooled": 0.013167667942363261,
+      "rho_pooled": 0.025993067799144055,
+      "spearman_pooled": 0.013860665992927821,
+      "r_within": 0.012422243951038898,
+      "rho_within": 0.024539650378601605,
+      "spearman_within": 0.013316611175789663,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        0.02025794890853524,
+        0.03172647613744186
+      ]
+    },
+    "mistral_S_window_var": {
+      "n": 116669,
+      "r_pooled": 0.0015934329928400793,
+      "rho_pooled": 0.0031817960069462042,
+      "spearman_pooled": 0.014367884991895783,
+      "r_within": 0.0013387121301856187,
+      "rho_within": 0.0026738447519675454,
+      "spearman_within": 0.06909216501270114,
+      "passes_pooled": false,
+      "passes_within": false,
+      "fisher_z_ci_pooled": [
+        -0.0025563910682210073,
+        0.00891977355497951
+      ]
+    }
+  },
+  "window_scale_used": "WINDOW_SCALE[:4] (default)",
+  "runtime_sec": 512.3014669418335
+}

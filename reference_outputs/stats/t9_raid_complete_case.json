@@ -1,0 +1,228 @@
+{
+  "n_total": 68212,
+  "n_included": 22041,
+  "n_excluded": 46171,
+  "included_vs_excluded_composition": {
+    "Label": {
+      "included_pct": {
+        "chatgpt": 0.05675786035116374,
+        "cohere": 0.043419082618755954,
+        "cohere-chat": 0.029263645025180345,
+        "gpt2": 0.04922644163150492,
+        "gpt3": 0.018147996914840526,
+        "gpt4": 0.06310965927135792,
+        "human": 0.5152670024046095,
+        "llama-chat": 0.06728369856177124,
+        "mistral": 0.050315321446395354,
+        "mistral-chat": 0.03189510457783222,
+        "mpt": 0.05117735129985028,
+        "mpt-chat": 0.024136835896737898
+      },
+      "excluded_pct": {
+        "chatgpt": 0.051699118494292956,
+        "cohere": 0.041909423664204803,
+        "cohere-chat": 0.031859825431547945,
+        "gpt2": 0.06296159927227048,
+        "gpt3": 0.02304476836109246,
+        "gpt4": 0.058348313876675835,
+        "human": 0.4942929544519287,
+        "llama-chat": 0.055316107513374194,
+        "mistral": 0.0549045937926404,
+        "mistral-chat": 0.03597496263888588,
+        "mpt": 0.06118559268805094,
+        "mpt-chat": 0.028502739815035413
+      }
+    },
+    "domain": {
+      "included_pct": {
+        "abstracts": 0.06356335919422894,
+        "books": 0.13905902635996553,
+        "news": 0.17417540039018192,
+        "poetry": 0.12272582913660905,
+        "recipes": 0.1592486729277256,
+        "reddit": 0.07495122725829137,
+        "reviews": 0.14237103579692392,
+        "wiki": 0.12390544893607368
+      },
+      "excluded_pct": {
+        "abstracts": 0.08158800978969483,
+        "books": 0.12769920512876048,
+        "news": 0.15524896580104394,
+        "poetry": 0.12143986485023066,
+        "recipes": 0.16289445755994023,
+        "reddit": 0.08418704381538195,
+        "reviews": 0.13387191093976739,
+        "wiki": 0.13307054211518052
+      }
+    },
+    "attack": {
+      "included_pct": {
+        "alternative_spelling": 0.09863436323215825,
+        "article_deletion": 0.09745474343269361,
+        "homoglyph": 0.19127988748241911,
+        "none": 0.09849825325529694,
+        "paraphrase": 0.07649380699605281,
+        "perplexity_misspelling": 0.10240007259198766,
+        "upper_lower": 0.10013157297763259,
+        "whitespace": 0.14051086611315275,
+        "zero_width_space": 0.09459643391860624
+      },
+      "excluded_pct": {
+        "alternative_spelling": 0.08637456412033527,
+        "article_deletion": 0.0793138550172186,
+        "homoglyph": 0.18609083623919775,
+        "none": 0.08626627103593165,
+        "paraphrase": 0.05102770137099045,
+        "perplexity_misspelling": 0.08561651252950987,
+        "upper_lower": 0.08602802625024365,
+        "whitespace": 0.09668406575556085,
+        "zero_width_space": 0.2425981676810119
+      }
+    }
+  },
+  "complete_case_baseline_auroc": 0.8032112857989935,
+  "auroc_by_group_complete_case": {
+    "attack": {
+      "alternative_spelling": {
+        "n": 2174,
+        "auroc": 0.8605550826101505
+      },
+      "article_deletion": {
+        "n": 2148,
+        "auroc": 0.845498830915839
+      },
+      "homoglyph": {
+        "n": 4216,
+        "auroc": 0.7110127394000154
+      },
+      "none": {
+        "n": 2171,
+        "auroc": 0.8625749803956182
+      },
+      "paraphrase": {
+        "n": 1686,
+        "auroc": 0.7828718980644344
+      },
+      "perplexity_misspelling": {
+        "n": 2257,
+        "auroc": 0.8499805949113101
+      },
+      "upper_lower": {
+        "n": 2207,
+        "auroc": 0.8364953531461001
+      },
+      "whitespace": {
+        "n": 3097,
+        "auroc": 0.881452526654259
+      },
+      "zero_width_space": {
+        "n": 2085,
+        "auroc": 0.6502510222038197
+      }
+    },
+    "domain": {
+      "abstracts": {
+        "n": 1401,
+        "auroc": 0.7240398904486447
+      },
+      "books": {
+        "n": 3065,
+        "auroc": 0.8300572774751686
+      },
+      "news": {
+        "n": 3839,
+        "auroc": 0.9302326544976021
+      },
+      "poetry": {
+        "n": 2705,
+        "auroc": 0.7180536167828758
+      },
+      "recipes": {
+        "n": 3510,
+        "auroc": 0.6600876717555597
+      },
+      "reddit": {
+        "n": 1652,
+        "auroc": 0.5916192945713241
+      },
+      "reviews": {
+        "n": 3138,
+        "auroc": 0.8809752852704889
+      },
+      "wiki": {
+        "n": 2731,
+        "auroc": 0.8136070280116035
+      }
+    },
+    "generator_vs_human": {
+      "chatgpt": {
+        "n": 12608,
+        "n_generator_rows": 1251,
+        "n_human_rows": 11357,
+        "auroc": 0.8990028370013332
+      },
+      "cohere": {
+        "n": 12314,
+        "n_generator_rows": 957,
+        "n_human_rows": 11357,
+        "auroc": 0.7537328696510486
+      },
+      "cohere-chat": {
+        "n": 12002,
+        "n_generator_rows": 645,
+        "n_human_rows": 11357,
+        "auroc": 0.8138661195192255
+      },
+      "gpt2": {
+        "n": 12442,
+        "n_generator_rows": 1085,
+        "n_human_rows": 11357,
+        "auroc": 0.7616051977119614
+      },
+      "gpt3": {
+        "n": 11757,
+        "n_generator_rows": 400,
+        "n_human_rows": 11357,
+        "auroc": 0.8631212027824249
+      },
+      "gpt4": {
+        "n": 12748,
+        "n_generator_rows": 1391,
+        "n_human_rows": 11357,
+        "auroc": 0.8705651059240882
+      },
+      "llama-chat": {
+        "n": 12840,
+        "n_generator_rows": 1483,
+        "n_human_rows": 11357,
+        "auroc": 0.8575158776069796
+      },
+      "mistral": {
+        "n": 12466,
+        "n_generator_rows": 1109,
+        "n_human_rows": 11357,
+        "auroc": 0.7061666880906601
+      },
+      "mistral-chat": {
+        "n": 12060,
+        "n_generator_rows": 703,
+        "n_human_rows": 11357,
+        "auroc": 0.8207484721575266
+      },
+      "mpt": {
+        "n": 12485,
+        "n_generator_rows": 1128,
+        "n_human_rows": 11357,
+        "auroc": 0.7319013736646315
+      },
+      "mpt-chat": {
+        "n": 11889,
+        "n_generator_rows": 532,
+        "n_human_rows": 11357,
+        "auroc": 0.696689498245923
+      }
+    }
+  },
+  "min_n_per_group": 100,
+  "note": "Items (3) IPW sensitivity and (4) reduced-feature-set-for-more-rows are deferred to a future session per the plan's own cost ordering."
+}

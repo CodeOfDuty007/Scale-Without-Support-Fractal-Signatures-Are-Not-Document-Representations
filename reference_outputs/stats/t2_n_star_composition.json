@@ -1,0 +1,222 @@
+{
+  "gemma_S": {
+    "var_delta": 0.010489685403222222,
+    "curve": [
+      {
+        "N": 100,
+        "var_eta_N": 0.7423761457386007,
+        "r_N": 0.013933007674572232,
+        "rho_N_spearman_brown": 0.0274830932006587
+      },
+      {
+        "N": 200,
+        "var_eta_N": 0.18773307970989123,
+        "r_N": 0.05291867156245352,
+        "rho_N_spearman_brown": 0.10051806087534972
+      },
+      {
+        "N": 400,
+        "var_eta_N": 0.07074427784561041,
+        "r_N": 0.12912930729589836,
+        "rho_N_spearman_brown": 0.22872368374733698
+      },
+      {
+        "N": 800,
+        "var_eta_N": 0.03815931370465469,
+        "r_N": 0.21561975776648204,
+        "rho_N_spearman_brown": 0.3547486891174767
+      },
+      {
+        "N": 1600,
+        "var_eta_N": 0.03207355303593826,
+        "r_N": 0.24644941944951126,
+        "rho_N_spearman_brown": 0.39544231094167387
+      },
+      {
+        "N": 3200,
+        "var_eta_N": 0.016614919551964695,
+        "r_N": 0.38700750003791684,
+        "rho_N_spearman_brown": 0.5580467301400132
+      },
+      {
+        "N": 6400,
+        "var_eta_N": 0.009148204318722666,
+        "r_N": 0.5341554287017021,
+        "rho_N_spearman_brown": 0.6963511241540079
+      },
+      {
+        "N": 12800,
+        "var_eta_N": 0.004464336867530384,
+        "r_N": 0.701462470317312,
+        "rho_N_spearman_brown": 0.8245406320205155
+      }
+    ],
+    "N_star_fBm_floor": 6400,
+    "note": "N* is the first N_grid point in {100..12800} where the Spearman-Brown-corrected rho(N) crosses 0.60 (matching the bar's own pre-registration on the corrected coefficient, not raw r); true crossing may lie between grid points. This fBm-arm N* is a LOWER BOUND: the empirical half-level Var(eta) from T0 (real text) is larger than this fBm floor's Var(eta) at comparable N, so the real-text N* is at or above this number, not below it."
+  },
+  "gemma_H": {
+    "var_delta": 0.002172142648064935,
+    "curve": [
+      {
+        "N": 100,
+        "var_eta_N": 0.011584530193075818,
+        "r_N": 0.15789738355693955,
+        "rho_N_spearman_brown": 0.2727312209168231
+      },
+      {
+        "N": 200,
+        "var_eta_N": 0.0067154288717571845,
+        "r_N": 0.24440226930611628,
+        "rho_N_spearman_brown": 0.3928026737566076
+      },
+      {
+        "N": 400,
+        "var_eta_N": 0.0044602804549004,
+        "r_N": 0.3275036309269499,
+        "rho_N_spearman_brown": 0.4934127836596054
+      },
+      {
+        "N": 800,
+        "var_eta_N": 0.0016326952788702869,
+        "r_N": 0.570889664626158,
+        "rho_N_spearman_brown": 0.72683610756586
+      },
+      {
+        "N": 1600,
+        "var_eta_N": 0.0008999841636550361,
+        "r_N": 0.7070484980562479,
+        "rho_N_spearman_brown": 0.8283871241635343
+      },
+      {
+        "N": 3200,
+        "var_eta_N": 0.0005235229983402258,
+        "r_N": 0.8057908260846902,
+        "rho_N_spearman_brown": 0.8924520098840055
+      },
+      {
+        "N": 6400,
+        "var_eta_N": 0.00024169967333977056,
+        "r_N": 0.8998693198820392,
+        "rho_N_spearman_brown": 0.9472960171154414
+      },
+      {
+        "N": 12800,
+        "var_eta_N": 0.00010849519015960132,
+        "r_N": 0.9524276988037416,
+        "rho_N_spearman_brown": 0.9756342827827088
+      }
+    ],
+    "N_star_fBm_floor": 800,
+    "note": "N* is the first N_grid point in {100..12800} where the Spearman-Brown-corrected rho(N) crosses 0.60 (matching the bar's own pre-registration on the corrected coefficient, not raw r); true crossing may lie between grid points. This fBm-arm N* is a LOWER BOUND: the empirical half-level Var(eta) from T0 (real text) is larger than this fBm floor's Var(eta) at comparable N, so the real-text N* is at or above this number, not below it."
+  },
+  "mistral_S": {
+    "var_delta": 0.008696786798424876,
+    "curve": [
+      {
+        "N": 100,
+        "var_eta_N": 0.7423761457386007,
+        "r_N": 0.01157915086761052,
+        "rho_N_spearman_brown": 0.0228932177134717
+      },
+      {
+        "N": 200,
+        "var_eta_N": 0.18773307970989123,
+        "r_N": 0.04427425906770999,
+        "rho_N_spearman_brown": 0.08479431276461115
+      },
+      {
+        "N": 400,
+        "var_eta_N": 0.07074427784561041,
+        "r_N": 0.10947470099241502,
+        "rho_N_spearman_brown": 0.19734510556120097
+      },
+      {
+        "N": 800,
+        "var_eta_N": 0.03815931370465469,
+        "r_N": 0.1856062861623171,
+        "rho_N_spearman_brown": 0.3130993624588566
+      },
+      {
+        "N": 1600,
+        "var_eta_N": 0.03207355303593826,
+        "r_N": 0.2133116092178074,
+        "rho_N_spearman_brown": 0.3516188382229759
+      },
+      {
+        "N": 3200,
+        "var_eta_N": 0.016614919551964695,
+        "r_N": 0.3435875352706525,
+        "rho_N_spearman_brown": 0.5114479351007676
+      },
+      {
+        "N": 6400,
+        "var_eta_N": 0.009148204318722666,
+        "r_N": 0.4873517022974583,
+        "rho_N_spearman_brown": 0.6553281265549551
+      },
+      {
+        "N": 12800,
+        "var_eta_N": 0.004464336867530384,
+        "r_N": 0.6607936388381049,
+        "rho_N_spearman_brown": 0.7957564665293367
+      }
+    ],
+    "N_star_fBm_floor": 6400,
+    "note": "N* is the first N_grid point in {100..12800} where the Spearman-Brown-corrected rho(N) crosses 0.60 (matching the bar's own pre-registration on the corrected coefficient, not raw r); true crossing may lie between grid points. This fBm-arm N* is a LOWER BOUND: the empirical half-level Var(eta) from T0 (real text) is larger than this fBm floor's Var(eta) at comparable N, so the real-text N* is at or above this number, not below it."
+  },
+  "mistral_H": {
+    "var_delta": 0.0019035731353599058,
+    "curve": [
+      {
+        "N": 100,
+        "var_eta_N": 0.011584530193075818,
+        "r_N": 0.14112978593119005,
+        "rho_N_spearman_brown": 0.24735098088080257
+      },
+      {
+        "N": 200,
+        "var_eta_N": 0.0067154288717571845,
+        "r_N": 0.2208577203936188,
+        "rho_N_spearman_brown": 0.36180746815019804
+      },
+      {
+        "N": 400,
+        "var_eta_N": 0.0044602804549004,
+        "r_N": 0.29912271053395534,
+        "rho_N_spearman_brown": 0.46049954805425924
+      },
+      {
+        "N": 800,
+        "var_eta_N": 0.0016326952788702869,
+        "r_N": 0.5382999570111233,
+        "rho_N_spearman_brown": 0.6998634493327636
+      },
+      {
+        "N": 1600,
+        "var_eta_N": 0.0008999841636550361,
+        "r_N": 0.6789849224871364,
+        "rho_N_spearman_brown": 0.8088040736915414
+      },
+      {
+        "N": 3200,
+        "var_eta_N": 0.0005235229983402258,
+        "r_N": 0.7843006747565,
+        "rho_N_spearman_brown": 0.8791126807857448
+      },
+      {
+        "N": 6400,
+        "var_eta_N": 0.00024169967333977056,
+        "r_N": 0.8873338288913133,
+        "rho_N_spearman_brown": 0.9403040578280363
+      },
+      {
+        "N": 12800,
+        "var_eta_N": 0.00010849519015960132,
+        "r_N": 0.9460777803698149,
+        "rho_N_spearman_brown": 0.9722918476465323
+      }
+    ],
+    "N_star_fBm_floor": 800,
+    "note": "N* is the first N_grid point in {100..12800} where the Spearman-Brown-corrected rho(N) crosses 0.60 (matching the bar's own pre-registration on the corrected coefficient, not raw r); true crossing may lie between grid points. This fBm-arm N* is a LOWER BOUND: the empirical half-level Var(eta) from T0 (real text) is larger than this fBm floor's Var(eta) at comparable N, so the real-text N* is at or above this number, not below it."
+  }
+}

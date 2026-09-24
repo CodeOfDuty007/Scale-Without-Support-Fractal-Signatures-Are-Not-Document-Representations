@@ -1,0 +1,90 @@
+{
+  "n_reps_planned": 500,
+  "n_reps_run": 20,
+  "n_reps": 20,
+  "reduction_reason": "TWO reductions applied, both documented rather than silent. (1) This session's cgroup CPU quota (cpu.max=800000 100000) hard-caps available CPU at 8.0 cores regardless of the 192 cores `nproc` reports -- confirmed via /sys/fs/cgroup/cpu.max. At ~1.74 min/rep on 8 cores, 500 reps would take ~14.5 hours; a first reduction to 100 reps (~3h34m, actually run, see t1_permutation_stats_v1_ORDER_SCRAMBLE_BUG.json) was itself invalidated by an order-scrambling bug in split_permutation, not by cost. (2) After fixing that bug, reduced further to 20 reps (~35-45 min at the now-confirmed per-rep cost): each replicate's rho is computed over ~200,000 documents, so within-replicate sampling error is negligible -- the replicates characterize variability ACROSS permutation draws only, and a 5th/95th percentile from 20 draws is adequate for the plan's actual question (does gemma_S stay in [0.03,0.12] across constructions).",
+  "n_docs": 223834,
+  "summary": {
+    "gemma_H": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.5442927967036453,
+      "rho_pooled_p5": 0.5423854491914257,
+      "rho_pooled_p95": 0.5461769258548983,
+      "rho_within_median": 0.5150795354944855,
+      "rho_within_p5": 0.5129828114488137,
+      "rho_within_p95": 0.5172440804492573,
+      "n_docs_median": 221904
+    },
+    "gemma_H_R2": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.1432398768166635,
+      "rho_pooled_p5": 0.13702035421583234,
+      "rho_pooled_p95": 0.1483631110650398,
+      "rho_within_median": 0.14184638189250542,
+      "rho_within_p5": 0.13562851426097453,
+      "rho_within_p95": 0.14699219846936692,
+      "n_docs_median": 221904
+    },
+    "gemma_S": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.05298096834319395,
+      "rho_pooled_p5": 0.048369677050426135,
+      "rho_pooled_p95": 0.057054077014671585,
+      "rho_within_median": 0.050274938371371536,
+      "rho_within_p5": 0.04552431522579531,
+      "rho_within_p95": 0.05425395911246066,
+      "n_docs_median": 197310
+    },
+    "gemma_S_R2": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.010412073178255241,
+      "rho_pooled_p5": 0.007932916377041766,
+      "rho_pooled_p95": 0.015946320452212233,
+      "rho_within_median": 0.00993951380483798,
+      "rho_within_p5": 0.0073884922483653,
+      "rho_within_p95": 0.015512422240433034,
+      "n_docs_median": 221902
+    },
+    "mistral_H": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.5152309807509874,
+      "rho_pooled_p5": 0.5128773116936711,
+      "rho_pooled_p95": 0.5182271173694186,
+      "rho_within_median": 0.48186767246535667,
+      "rho_within_p5": 0.47951172065861675,
+      "rho_within_p95": 0.4850211130929459,
+      "n_docs_median": 223834
+    },
+    "mistral_H_R2": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.12405270563285695,
+      "rho_pooled_p5": 0.11977383973765662,
+      "rho_pooled_p95": 0.12846320536111208,
+      "rho_within_median": 0.12239832537349668,
+      "rho_within_p5": 0.11828056193017275,
+      "rho_within_p95": 0.12678978052407602,
+      "n_docs_median": 223834
+    },
+    "mistral_S": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.045153299599131086,
+      "rho_pooled_p5": 0.038613768697208645,
+      "rho_pooled_p95": 0.04984980695397073,
+      "rho_within_median": 0.04220872043345185,
+      "rho_within_p5": 0.03570503016811491,
+      "rho_within_p95": 0.04699903945895131,
+      "n_docs_median": 195440
+    },
+    "mistral_S_R2": {
+      "n_reps": 20,
+      "rho_pooled_median": 0.009380980466305842,
+      "rho_pooled_p5": 0.0036011876138744526,
+      "rho_pooled_p95": 0.01417609166860164,
+      "rho_within_median": 0.00866647563635432,
+      "rho_within_p5": 0.002799096153275964,
+      "rho_within_p95": 0.013376416650160015,
+      "n_docs_median": 223831
+    }
+  },
+  "runtime_sec": 2465.0195894241333
+}

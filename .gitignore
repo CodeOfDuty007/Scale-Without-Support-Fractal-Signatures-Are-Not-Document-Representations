@@ -1,0 +1,25 @@
+# Environments
+.venv/
+venv/
+.env
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# Data and regenerated outputs (never committed)
+workspace/
+outputs/
+*.zip
+*.part
+*.parquet
+*.jsonl
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+results/
+hf_cache/
+logs/

@@ -1,0 +1,196 @@
+{
+  "bands": [
+    [
+      320,
+      360
+    ],
+    [
+      361,
+      400
+    ],
+    [
+      401,
+      464
+    ]
+  ],
+  "n_tokens_by_label": {
+    "Human": {
+      "count": 81238,
+      "mean": 400.0,
+      "std": 0.0,
+      "min": 400,
+      "max": 400
+    },
+    "gemma_2b": {
+      "count": 1827027,
+      "mean": 400.9715346298,
+      "std": 12.9455018967,
+      "min": 320,
+      "max": 463
+    },
+    "mistral_7b": {
+      "count": 1702519,
+      "mean": 399.842479291,
+      "std": 8.5045265617,
+      "min": 320,
+      "max": 463
+    }
+  },
+  "structural_finding": "Human documents are gated to EXACTLY 400 usable tokens (std=0); LLM documents range 320-463. Bands 320-360 and 401-464 are LLM-only by construction; only 361-400 contains both classes, dominated by the fixed human value of 400.",
+  "by_band": {
+    "320-360": {
+      "n_rows_all_features": 45894,
+      "label_counts_unique_doc_scorer": {
+        "gemma_2b": 3603,
+        "mistral_7b": 2220
+      },
+      "gemma_S": {
+        "n": 2730,
+        "r_pooled": 0.0478322909983853,
+        "rho_pooled": 0.09129760823234452,
+        "spearman_pooled": 0.04672665809039411,
+        "r_within": 0.04509066261828055,
+        "rho_within": 0.08629043245935097,
+        "spearman_within": 0.041873188906656644,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "gemma_H": {
+        "n": 3479,
+        "r_pooled": 0.25914762143120784,
+        "rho_pooled": 0.41162389067081456,
+        "spearman_pooled": 0.24003527192610338,
+        "r_within": 0.23131313522317828,
+        "rho_within": 0.3757178066345443,
+        "spearman_within": 0.21473494767145154,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_S": {
+        "n": 1808,
+        "r_pooled": 0.0015172127219324608,
+        "rho_pooled": 0.00302982854944443,
+        "spearman_pooled": 0.006400416175706304,
+        "r_within": 0.001962374517777606,
+        "rho_within": 0.0039170622923282,
+        "spearman_within": 0.0064259623581752225,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_H": {
+        "n": 2344,
+        "r_pooled": 0.31210542874403446,
+        "rho_pooled": 0.4757322421000668,
+        "spearman_pooled": 0.30938984652301854,
+        "r_within": 0.28149299754416807,
+        "rho_within": 0.4393203834646254,
+        "spearman_within": 0.2747700432407216,
+        "passes_pooled": false,
+        "passes_within": false
+      }
+    },
+    "361-400": {
+      "n_rows_all_features": 3408787,
+      "label_counts_unique_doc_scorer": {
+        "gemma_2b": 205977,
+        "mistral_7b": 205567,
+        "Human": 10000
+      },
+      "gemma_S": {
+        "n": 183648,
+        "r_pooled": 0.02850988748055795,
+        "rho_pooled": 0.05543920934079863,
+        "spearman_pooled": 0.03811166776721538,
+        "r_within": 0.02714994622493727,
+        "rho_within": 0.05286462083694966,
+        "spearman_within": 0.036577884877545916,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "gemma_H": {
+        "n": 207248,
+        "r_pooled": 0.4101859112837224,
+        "rho_pooled": 0.5817472831086808,
+        "spearman_pooled": 0.36338488091981175,
+        "r_within": 0.3865984245738312,
+        "rho_within": 0.5576213238416906,
+        "spearman_within": 0.34431265749125467,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_S": {
+        "n": 186983,
+        "r_pooled": 0.023104539473874117,
+        "rho_pooled": 0.04516554972135203,
+        "spearman_pooled": 0.03023770935374017,
+        "r_within": 0.021218560995603385,
+        "rho_within": 0.0415553766960856,
+        "spearman_within": 0.027809752364233584,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_H": {
+        "n": 214296,
+        "r_pooled": 0.3750854905942194,
+        "rho_pooled": 0.5455449761630933,
+        "spearman_pooled": 0.3322288445071806,
+        "r_within": 0.34995009389845005,
+        "rho_within": 0.5184637498529261,
+        "spearman_within": 0.31051062927139156,
+        "passes_pooled": false,
+        "passes_within": false
+      }
+    },
+    "401-464": {
+      "n_rows_all_features": 156103,
+      "label_counts_unique_doc_scorer": {
+        "gemma_2b": 14163,
+        "mistral_7b": 4208
+      },
+      "gemma_S": {
+        "n": 10593,
+        "r_pooled": 0.057542753411538264,
+        "rho_pooled": 0.10882350283411331,
+        "spearman_pooled": 0.06396330061425684,
+        "r_within": 0.05403652087491937,
+        "rho_within": 0.10253254001116682,
+        "spearman_within": 0.059248112618670384,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "gemma_H": {
+        "n": 11177,
+        "r_pooled": 0.31420763037132055,
+        "rho_pooled": 0.4781704551244209,
+        "spearman_pooled": 0.2887300513921757,
+        "r_within": 0.2579557709326753,
+        "rho_within": 0.4101189833429857,
+        "spearman_within": 0.23529926455164102,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_S": {
+        "n": 6761,
+        "r_pooled": 0.0760272128345024,
+        "rho_pooled": 0.14131094813899603,
+        "spearman_pooled": 0.0737559443221371,
+        "r_within": 0.07266610482637162,
+        "rho_within": 0.1354869040783829,
+        "spearman_within": 0.06941243233895722,
+        "passes_pooled": false,
+        "passes_within": false
+      },
+      "mistral_H": {
+        "n": 7194,
+        "r_pooled": 0.3266848492956513,
+        "rho_pooled": 0.492482972831251,
+        "spearman_pooled": 0.2984248151838347,
+        "r_within": 0.2625970435903382,
+        "rho_within": 0.4159633430530039,
+        "spearman_within": 0.2331815462758428,
+        "passes_pooled": false,
+        "passes_within": false
+      }
+    }
+  }
+}

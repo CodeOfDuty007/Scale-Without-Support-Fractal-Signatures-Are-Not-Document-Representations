@@ -1,0 +1,27 @@
+{
+  "runtime_sec": 8.812129259109497,
+  "gate": {
+    "n": 22041,
+    "auroc_reproduced": 0.8032112857989935,
+    "auroc_frozen": 0.8032112857989935,
+    "match": true
+  },
+  "n_fractal_columns": 54,
+  "n_groups_generator_domain": 96,
+  "reference_gap_all85_minus_all_minus_fractal31": {
+    "auroc_all85": 0.8032112857989935,
+    "auroc_minus_fractal": 0.7791582234605317,
+    "gap": 0.024044484824513778
+  },
+  "baseline_auroc_this_run": 0.8032112857989935,
+  "replacement": {
+    "auroc": 0.8149432229859903,
+    "fraction_of_gap_recovered": 1.4882830631070632,
+    "interpretation": "recovers most of the gap -> population-mean interpretation confirmed"
+  },
+  "subtraction": {
+    "auroc": 0.7934220181366151,
+    "fraction_of_gap_remaining": 0.593225214854311,
+    "interpretation": "gap disappears (fraction near 0) -> confirmed from the other side"
+  }
+}

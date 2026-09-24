@@ -1,0 +1,132 @@
+{
+  "estimators": [
+    "RS (calc_H, DFA_SCALE)",
+    "DFA (order-1)",
+    "local Whittle"
+  ],
+  "dfa_scale": [
+    8,
+    16,
+    32,
+    48,
+    64,
+    96
+  ],
+  "n_docs_loaded": 223834,
+  "reliability": {
+    "gemma_RS_H": {
+      "n": 221904,
+      "r_pooled": 0.40480972661472775,
+      "rho_pooled": 0.5763196523279024,
+      "spearman_pooled": 0.36096390848518506,
+      "r_within": 0.3813920596599697,
+      "rho_within": 0.5521851048627708,
+      "spearman_within": 0.34183494972095885,
+      "passes_pooled": false,
+      "passes_within": false
+    },
+    "gemma_DFA_H": {
+      "n": 221904,
+      "r_pooled": 0.45873367703623347,
+      "rho_pooled": 0.6289478117325169,
+      "spearman_pooled": 0.3724126810915681,
+      "r_within": 0.43000887350473904,
+      "rho_within": 0.6014072800133767,
+      "spearman_within": 0.3563092649240417,
+      "passes_pooled": true,
+      "passes_within": true
+    },
+    "gemma_Whittle_H": {
+      "n": 221904,
+      "r_pooled": 0.5121028157866919,
+      "rho_pooled": 0.677338618036054,
+      "spearman_pooled": 0.47365147066388374,
+      "r_within": 0.47826584487599794,
+      "rho_within": 0.647063377042465,
+      "spearman_within": 0.4496975974728002,
+      "passes_pooled": true,
+      "passes_within": true
+    },
+    "gemma_Whittle_H_excl_saturated": {
+      "n": 221881,
+      "r_pooled": 0.512220924828056,
+      "rho_pooled": 0.677441921902115,
+      "spearman_pooled": 0.4736285997019473,
+      "r_within": 0.47838081271923344,
+      "rho_within": 0.6471685895859703,
+      "spearman_within": 0.44968147516190826,
+      "passes_pooled": true,
+      "passes_within": true
+    },
+    "mistral_RS_H": {
+      "n": 223834,
+      "r_pooled": 0.37599912266010943,
+      "rho_pooled": 0.5465107011597803,
+      "spearman_pooled": 0.33440029475144384,
+      "r_within": 0.3512206266882085,
+      "rho_within": 0.5198568164978908,
+      "spearman_within": 0.3127437511427799,
+      "passes_pooled": false,
+      "passes_within": false
+    },
+    "mistral_DFA_H": {
+      "n": 223834,
+      "r_pooled": 0.4279092501556737,
+      "rho_pooled": 0.5993507642156141,
+      "spearman_pooled": 0.34526638228620143,
+      "r_within": 0.39454102410814473,
+      "rho_within": 0.5658363824190354,
+      "spearman_within": 0.32619622302861856,
+      "passes_pooled": false,
+      "passes_within": false
+    },
+    "mistral_Whittle_H": {
+      "n": 223834,
+      "r_pooled": 0.4722225116892554,
+      "rho_pooled": 0.641509701067427,
+      "spearman_pooled": 0.43781771422719085,
+      "r_within": 0.4332963149955207,
+      "rho_within": 0.6046151245381173,
+      "spearman_within": 0.4079267579189885,
+      "passes_pooled": true,
+      "passes_within": true
+    },
+    "mistral_Whittle_H_excl_saturated": {
+      "n": 223817,
+      "r_pooled": 0.47221627817429135,
+      "rho_pooled": 0.6415039490799422,
+      "spearman_pooled": 0.4377727577147709,
+      "r_within": 0.43328919308592856,
+      "rho_within": 0.6046081909723183,
+      "spearman_within": 0.4078847376619203,
+      "passes_pooled": true,
+      "passes_within": true
+    }
+  },
+  "saturation": {
+    "gemma": {
+      "n_total": 221904,
+      "n_either_half_saturated": 23,
+      "frac_either_saturated": 0.00010364842454394693
+    },
+    "mistral": {
+      "n_total": 223834,
+      "n_either_half_saturated": 17,
+      "frac_either_saturated": 7.594914088118874e-05
+    }
+  },
+  "cross_estimator_correlation": {
+    "gemma": {
+      "n": 221904,
+      "corr_RS_DFA": 0.8685347376599736,
+      "corr_RS_Whittle": 0.7592356809113319,
+      "corr_DFA_Whittle": 0.807673082414312
+    },
+    "mistral": {
+      "n": 223834,
+      "corr_RS_DFA": 0.8644368816238552,
+      "corr_RS_Whittle": 0.7505729318544039,
+      "corr_DFA_Whittle": 0.8029976590162751
+    }
+  }
+}

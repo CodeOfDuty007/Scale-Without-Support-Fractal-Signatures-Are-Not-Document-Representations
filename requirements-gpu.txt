@@ -1,0 +1,6 @@
+# Additional packages for the GPU feature pass (Family B + embedding dispersion)
+# and the T10 topology pilot. Install on top of requirements.txt.
+-r requirements.txt
+torch==2.13.0
+sentence-transformers==5.7.0
+gudhi==3.13.0

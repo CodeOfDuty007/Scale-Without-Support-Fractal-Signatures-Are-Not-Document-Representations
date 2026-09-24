@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Scale Without Support: Fractal Signatures Are Not Document Representations"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - name: "Anonymous"
+preferred-citation:
+  type: conference-paper
+  title: "Scale Without Support: Fractal Signatures Are Not Document Representations"
+  authors:
+    - name: "Anonymous"
+  conference:
+    name: "International Conference on Learning Representations (ICLR)"
+  year: 2027

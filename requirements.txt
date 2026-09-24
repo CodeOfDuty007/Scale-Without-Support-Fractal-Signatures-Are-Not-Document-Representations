@@ -1,0 +1,15 @@
+# CPU environment: data download, P0/P1 CPU feature pass, T0-T9 experiments,
+# figures, tests. Versions are those used for the paper's analysis runs.
+# Python >= 3.11 (paper runs: 3.11 for analysis, 3.12 for the GPU pass).
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.17.1
+scikit-learn==1.9.0
+lightgbm==4.7.0
+pyarrow==25.0.0
+joblib==1.6.0
+matplotlib==3.11.1
+fbm==0.3.0
+requests==2.34.2
+huggingface-hub==1.28.0
+transformers==5.14.1

@@ -1,0 +1,73 @@
+{
+  "config": [
+    "full",
+    "random",
+    "random",
+    "all",
+    "lgbm"
+  ],
+  "n": 43413,
+  "fold_prevalence_llm": 0.9776794969248842,
+  "gagle_corpus_human_prevalence": 0.022337982612114334,
+  "auroc_full": 0.9983974026992066,
+  "partial_auroc_fpr_le_1pct": 0.9595241086914048,
+  "partial_auroc_fpr_le_5pct": 0.9857137763096093,
+  "tpr_at_1pct_fpr": 0.958698520403355,
+  "tpr_at_5pct_fpr": 0.9951936669493922,
+  "tpr_at_0.1pct_fpr": {
+    "point": 0.6728630666289699,
+    "n_valid_folds": 2000
+  },
+  "achieved_fpr_at_1pct_threshold": {
+    "point": 0.009287925696594427,
+    "ci": [
+      0.0041279669762641896,
+      0.015479876160990712
+    ],
+    "n_valid_folds": 2000,
+    "target": 0.01
+  },
+  "achieved_fpr_at_5pct_threshold": {
+    "point": 0.04953560371517028,
+    "ci": [
+      0.03611971104231166,
+      0.06398348813209494
+    ],
+    "n_valid_folds": 2000,
+    "target": 0.05
+  },
+  "expected_calibration_error_15bins": 0.0009135230802438278,
+  "ppv_by_deployment_llm_prevalence": {
+    "llm_share_0.01": {
+      "assumed_llm_prevalence": 0.01,
+      "ppv_at_1pct_fpr_threshold": 0.5104338756275424,
+      "ppv_at_5pct_fpr_threshold": 0.16869924006998668
+    },
+    "llm_share_0.05": {
+      "assumed_llm_prevalence": 0.05,
+      "ppv_at_1pct_fpr_threshold": 0.8445424678205643,
+      "ppv_at_5pct_fpr_threshold": 0.5139480555173835
+    },
+    "llm_share_0.10": {
+      "assumed_llm_prevalence": 0.1,
+      "ppv_at_1pct_fpr_threshold": 0.919800302060699,
+      "ppv_at_5pct_fpr_threshold": 0.6906203531824322
+    },
+    "llm_share_0.25": {
+      "assumed_llm_prevalence": 0.25,
+      "ppv_at_1pct_fpr_threshold": 0.9717566978176793,
+      "ppv_at_5pct_fpr_threshold": 0.8700762816666872
+    },
+    "llm_share_0.50": {
+      "assumed_llm_prevalence": 0.5,
+      "ppv_at_1pct_fpr_threshold": 0.9904049010871838,
+      "ppv_at_5pct_fpr_threshold": 0.9525852246068878
+    },
+    "gagle_corpus_composition": {
+      "assumed_llm_prevalence": 0.9776620173878857,
+      "ppv_at_1pct_fpr_threshold": 0.9997786926908507,
+      "ppv_at_5pct_fpr_threshold": 0.9988640180491338
+    }
+  },
+  "note_on_prevalence_direction": "y=1 is the LLM (positive/flagged) class. GAGLE's 2.234% figure is a HUMAN prevalence (humans are the rare class in this research corpus by construction); a real content-moderation deployment is typically the opposite shape (LLM content is the minority of traffic), so the PPV sweep above is over assumed LLM prevalence, not human prevalence -- with GAGLE's own corpus-wide LLM share (1 - 0.022338 = 0.977662) included as a reference point, not as 'the' deployment case."
+}

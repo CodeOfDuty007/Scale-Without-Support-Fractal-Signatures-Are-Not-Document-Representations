@@ -1,0 +1,222 @@
+{
+  "gemma_H": {
+    "interleave": {
+      "rho_pooled": 0.5763196523279019,
+      "rho_within": 0.5521851048627712,
+      "n": 221904
+    },
+    "contiguous": {
+      "rho_pooled": 0.2608866538154151,
+      "rho_within": 0.2105615069059728,
+      "n": 221904
+    },
+    "block_4": {
+      "rho_pooled": 0.5623838823818937,
+      "rho_within": 0.5349158530038257,
+      "n": 221904
+    },
+    "block_8": {
+      "rho_pooled": 0.5486086183561428,
+      "rho_within": 0.5157571344028868,
+      "n": 221904
+    },
+    "block_16": {
+      "rho_pooled": 0.534176606012959,
+      "rho_within": 0.4946555284605731,
+      "n": 221904
+    },
+    "block_32": {
+      "rho_pooled": 0.5012702551860561,
+      "rho_within": 0.4556044344148905,
+      "n": 221904
+    },
+    "block_bootstrap": {
+      "rho_pooled": 0.7778556558833878,
+      "rho_within": 0.7626365179669798,
+      "n": 221904
+    },
+    "matched_sweep": {
+      "rho_pooled": 0.576319652327902,
+      "rho_within": 0.5521851048627707,
+      "n": 221904
+    },
+    "permutation": {
+      "rho_pooled_median": 0.5442927967036453,
+      "rho_pooled_p5": 0.5423854491914257,
+      "rho_pooled_p95": 0.5461769258548983,
+      "rho_within_median": 0.5150795354944855,
+      "n_reps": 20
+    }
+  },
+  "gemma_S": {
+    "interleave": {
+      "rho_pooled": 0.06263746068788005,
+      "rho_within": 0.06012782731593669,
+      "n": 196971
+    },
+    "contiguous": {
+      "rho_pooled": 0.015923062937770505,
+      "rho_within": 0.014864895029305228,
+      "n": 195315
+    },
+    "block_4": {
+      "rho_pooled": 0.052642120880639826,
+      "rho_within": 0.049592790245249214,
+      "n": 197248
+    },
+    "block_8": {
+      "rho_pooled": 0.04962506328553706,
+      "rho_within": 0.04690948309599976,
+      "n": 197350
+    },
+    "block_16": {
+      "rho_pooled": 0.04902306097092558,
+      "rho_within": 0.0460703789196028,
+      "n": 197028
+    },
+    "block_32": {
+      "rho_pooled": 0.039615104319357726,
+      "rho_within": 0.036892127128832525,
+      "n": 196327
+    },
+    "block_bootstrap": {
+      "rho_pooled": 0.20465889940726825,
+      "rho_within": 0.19841234812606917,
+      "n": 218123
+    },
+    "matched_sweep": {
+      "rho_pooled": 0.06263746068787997,
+      "rho_within": 0.06012782731593672,
+      "n": 196971
+    },
+    "permutation": {
+      "rho_pooled_median": 0.05298096834319395,
+      "rho_pooled_p5": 0.048369677050426135,
+      "rho_pooled_p95": 0.057054077014671585,
+      "rho_within_median": 0.050274938371371536,
+      "n_reps": 20
+    }
+  },
+  "mistral_H": {
+    "interleave": {
+      "rho_pooled": 0.5465107011597806,
+      "rho_within": 0.5198568164978906,
+      "n": 223834
+    },
+    "contiguous": {
+      "rho_pooled": 0.2677515644894099,
+      "rho_within": 0.20238919999965513,
+      "n": 223832
+    },
+    "block_4": {
+      "rho_pooled": 0.5308156837500161,
+      "rho_within": 0.4988078881263764,
+      "n": 223834
+    },
+    "block_8": {
+      "rho_pooled": 0.5231657434324086,
+      "rho_within": 0.48245280674040875,
+      "n": 223834
+    },
+    "block_16": {
+      "rho_pooled": 0.5128490954282608,
+      "rho_within": 0.465575210543521,
+      "n": 223834
+    },
+    "block_32": {
+      "rho_pooled": 0.47766942090451886,
+      "rho_within": 0.42352527017576214,
+      "n": 223834
+    },
+    "block_bootstrap": {
+      "rho_pooled": 0.7768990836768317,
+      "rho_within": 0.7586475585002272,
+      "n": 223832
+    },
+    "matched_sweep": {
+      "rho_pooled": 0.5465107011597803,
+      "rho_within": 0.5198568164978905,
+      "n": 223834
+    },
+    "permutation": {
+      "rho_pooled_median": 0.5152309807509874,
+      "rho_pooled_p5": 0.5128773116936711,
+      "rho_pooled_p95": 0.5182271173694186,
+      "rho_within_median": 0.48186767246535667,
+      "n_reps": 20
+    }
+  },
+  "mistral_S": {
+    "interleave": {
+      "rho_pooled": 0.04969984948079783,
+      "rho_within": 0.04642683145286974,
+      "n": 195552
+    },
+    "contiguous": {
+      "rho_pooled": 0.003988049362708165,
+      "rho_within": 0.003956065056065503,
+      "n": 192786
+    },
+    "block_4": {
+      "rho_pooled": 0.048458610446199285,
+      "rho_within": 0.04545243734491543,
+      "n": 195478
+    },
+    "block_8": {
+      "rho_pooled": 0.04670640382719977,
+      "rho_within": 0.043388141588154974,
+      "n": 195765
+    },
+    "block_16": {
+      "rho_pooled": 0.03477299189141803,
+      "rho_within": 0.03182605164942961,
+      "n": 194867
+    },
+    "block_32": {
+      "rho_pooled": 0.028028506692018396,
+      "rho_within": 0.02579163330204039,
+      "n": 194759
+    },
+    "block_bootstrap": {
+      "rho_pooled": 0.19122356232053464,
+      "rho_within": 0.18527741099305658,
+      "n": 219470
+    },
+    "matched_sweep": {
+      "rho_pooled": 0.04969984948079777,
+      "rho_within": 0.04642683145286968,
+      "n": 195552
+    },
+    "permutation": {
+      "rho_pooled_median": 0.045153299599131086,
+      "rho_pooled_p5": 0.038613768697208645,
+      "rho_pooled_p95": 0.04984980695397073,
+      "rho_within_median": 0.04220872043345185,
+      "n_reps": 20
+    }
+  },
+  "_headline_test_gemma_S": {
+    "in_band_0.03_0.12": false,
+    "values_used": {
+      "interleave": 0.06263746068788005,
+      "contiguous": 0.015923062937770505,
+      "block_4": 0.052642120880639826,
+      "block_8": 0.04962506328553706,
+      "block_16": 0.04902306097092558,
+      "block_32": 0.039615104319357726,
+      "matched_sweep": 0.06263746068787997,
+      "permutation": 0.05298096834319395
+    },
+    "excluded": {
+      "block_bootstrap": {
+        "rho_pooled": 0.20465889940726825,
+        "reason": "block_len>=96 on ~400-token documents structurally forces ~47% token-position overlap between the two nominally independent halves (measured directly) -- not a genuine split-half reliability number."
+      }
+    },
+    "below_band": {
+      "contiguous": 0.015923062937770505
+    },
+    "above_band": {},
+    "note": "'contiguous' falling below the band is pre-registered, expected evidence AGAINST that construction (drift confound: gemma_H collapses 0.576->0.261 under contiguous), not a headline-test failure in the sense of undermining gemma_S's reliability claim."
+  }
+}

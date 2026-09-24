@@ -1,0 +1,465 @@
+{
+  "runtime_sec": 706.2929298877716,
+  "gate": {
+    "all_features_reproduced": 0.5836807615816951,
+    "all_features_frozen": 0.5816055952600065,
+    "all_features_frozen_ci": [
+      0.5746914833590111,
+      0.5884554435745396
+    ],
+    "fractal_only_reproduced": 0.19813341388246164,
+    "fractal_only_frozen": 0.19813341388246164,
+    "fractal_only_frozen_ci": [
+      0.19188021995203172,
+      0.20428974499825533
+    ],
+    "all_features_match": true,
+    "fractal_only_match": true
+  },
+  "headline": {
+    "all_features": {
+      "macro_f1": 0.5836807615816951,
+      "ci": [
+        0.5768350065329964,
+        0.5901225675473301
+      ],
+      "n_test": 14805
+    },
+    "fractal_only": {
+      "macro_f1": 0.19813341388246164,
+      "ci": [
+        0.19188021995203172,
+        0.20428974499825533
+      ],
+      "n_test": 14919
+    }
+  },
+  "t3_1_population_only_control": {
+    "macro_f1": 0.05938126832385095,
+    "ci": [
+      0.05780194040140619,
+      0.06091597946000481
+    ],
+    "n_test": 42444,
+    "n_train": 154083,
+    "chance_level": 0.125,
+    "n_classes": 8,
+    "features_used": [
+      "Label(generator)",
+      "domain",
+      "temp"
+    ]
+  },
+  "t3_2_balance_table": {
+    "n_observed_cells": 30,
+    "n_prompt_types": 8,
+    "n_total_test_rows": 14805,
+    "chi2": 413.32897974418734,
+    "dof": 203,
+    "p_value": 1.7575484043033998e-16,
+    "max_cell_proportion_deviation": 0.002212757745319344,
+    "expected_uniform_fraction_per_cell_type": 0.004166666666666667
+  },
+  "t3_3_group_mean_removal": {
+    "fractal_only_before": 0.19813341388246164,
+    "fractal_only_after": 0.20461078881174344,
+    "fractal_only_after_ci": [
+      0.19858325955952624,
+      0.21108063206817038
+    ],
+    "all_features_before": 0.5836807615816951,
+    "all_features_after_fractal_demeaned": 0.5830755052277792,
+    "all_features_after_ci": [
+      0.5759380499715829,
+      0.5899029692578515
+    ],
+    "means_computed_from": "TRAIN split only, applied to train/val/test",
+    "interpretation": "fell toward chance -> residual was population structure (paper strengthens); held near un-demeaned value -> fractal family carries genuine document-level prompt-type signal (P3 claim must soften further)"
+  },
+  "t3_4_within_stratum": {
+    "n_cells": 30,
+    "per_cell": [
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "big_patent",
+          "temp": "0.0"
+        },
+        "n_train": 5319,
+        "n_val": 736,
+        "n_test": 1454,
+        "macro_f1_all": 0.5408046901444161,
+        "macro_f1_fractal_only": 0.19475566928461
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "big_patent",
+          "temp": "0.5"
+        },
+        "n_train": 5553,
+        "n_val": 771,
+        "n_test": 1522,
+        "macro_f1_all": 0.5957591601740235,
+        "macro_f1_fractal_only": 0.24230750231816747
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "big_patent",
+          "temp": "1.0"
+        },
+        "n_train": 5313,
+        "n_val": 752,
+        "n_test": 1453,
+        "macro_f1_all": 0.5519496099676254,
+        "macro_f1_fractal_only": 0.17766215616633516
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "billsum",
+          "temp": "0.0"
+        },
+        "n_train": 5254,
+        "n_val": 753,
+        "n_test": 1392,
+        "macro_f1_all": 0.6176538068452442,
+        "macro_f1_fractal_only": 0.2129130409377365
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "billsum",
+          "temp": "0.5"
+        },
+        "n_train": 5510,
+        "n_val": 796,
+        "n_test": 1451,
+        "macro_f1_all": 0.6656823544680738,
+        "macro_f1_fractal_only": 0.22372637535743245
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "billsum",
+          "temp": "1.0"
+        },
+        "n_train": 5292,
+        "n_val": 761,
+        "n_test": 1402,
+        "macro_f1_all": 0.6231388883879407,
+        "macro_f1_fractal_only": 0.20057775613431028
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "newsroom",
+          "temp": "0.0"
+        },
+        "n_train": 5206,
+        "n_val": 775,
+        "n_test": 1379,
+        "macro_f1_all": 0.5620262427171081,
+        "macro_f1_fractal_only": 0.2092293927090793
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "newsroom",
+          "temp": "0.5"
+        },
+        "n_train": 5494,
+        "n_val": 808,
+        "n_test": 1438,
+        "macro_f1_all": 0.5755052343008411,
+        "macro_f1_fractal_only": 0.24700169478467682
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "newsroom",
+          "temp": "1.0"
+        },
+        "n_train": 5220,
+        "n_val": 767,
+        "n_test": 1383,
+        "macro_f1_all": 0.5574439446342154,
+        "macro_f1_fractal_only": 0.20555859449992198
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "scientific_papers",
+          "temp": "0.0"
+        },
+        "n_train": 4973,
+        "n_val": 797,
+        "n_test": 1405,
+        "macro_f1_all": 0.5057944282057187,
+        "macro_f1_fractal_only": 0.19396580825517237
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "scientific_papers",
+          "temp": "0.5"
+        },
+        "n_train": 5281,
+        "n_val": 880,
+        "n_test": 1485,
+        "macro_f1_all": 0.5884149051809261,
+        "macro_f1_fractal_only": 0.25535962772330423
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "scientific_papers",
+          "temp": "1.0"
+        },
+        "n_train": 4920,
+        "n_val": 816,
+        "n_test": 1397,
+        "macro_f1_all": 0.5422875349439976,
+        "macro_f1_fractal_only": 0.20088280023316696
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "wikipedia",
+          "temp": "0.0"
+        },
+        "n_train": 5188,
+        "n_val": 662,
+        "n_test": 1520,
+        "macro_f1_all": 0.5144063777552195,
+        "macro_f1_fractal_only": 0.1862941821495223
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "wikipedia",
+          "temp": "0.5"
+        },
+        "n_train": 5448,
+        "n_val": 690,
+        "n_test": 1590,
+        "macro_f1_all": 0.5580991589340811,
+        "macro_f1_fractal_only": 0.19237735366518452
+      },
+      {
+        "cell": {
+          "generator": "gemma_2b",
+          "domain": "wikipedia",
+          "temp": "1.0"
+        },
+        "n_train": 5228,
+        "n_val": 661,
+        "n_test": 1507,
+        "macro_f1_all": 0.5366974739622196,
+        "macro_f1_fractal_only": 0.18683380032829766
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "big_patent",
+          "temp": "0.0"
+        },
+        "n_train": 5072,
+        "n_val": 710,
+        "n_test": 1381,
+        "macro_f1_all": 0.5652772508873153,
+        "macro_f1_fractal_only": 0.1819715441506915
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "big_patent",
+          "temp": "0.5"
+        },
+        "n_train": 4957,
+        "n_val": 694,
+        "n_test": 1370,
+        "macro_f1_all": 0.5844413567254754,
+        "macro_f1_fractal_only": 0.21648621720762373
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "big_patent",
+          "temp": "1.0"
+        },
+        "n_train": 5029,
+        "n_val": 713,
+        "n_test": 1376,
+        "macro_f1_all": 0.5982776729047019,
+        "macro_f1_fractal_only": 0.18276522417102775
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "billsum",
+          "temp": "0.0"
+        },
+        "n_train": 5102,
+        "n_val": 739,
+        "n_test": 1366,
+        "macro_f1_all": 0.5581761790599975,
+        "macro_f1_fractal_only": 0.15648047681526348
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "billsum",
+          "temp": "0.5"
+        },
+        "n_train": 5065,
+        "n_val": 732,
+        "n_test": 1339,
+        "macro_f1_all": 0.5661602239085615,
+        "macro_f1_fractal_only": 0.20049926773770238
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "billsum",
+          "temp": "1.0"
+        },
+        "n_train": 5110,
+        "n_val": 733,
+        "n_test": 1349,
+        "macro_f1_all": 0.5729007409780602,
+        "macro_f1_fractal_only": 0.1695978433880213
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "newsroom",
+          "temp": "0.0"
+        },
+        "n_train": 5060,
+        "n_val": 754,
+        "n_test": 1325,
+        "macro_f1_all": 0.5637322295844118,
+        "macro_f1_fractal_only": 0.2057894818147045
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "newsroom",
+          "temp": "0.5"
+        },
+        "n_train": 4973,
+        "n_val": 744,
+        "n_test": 1322,
+        "macro_f1_all": 0.5352745644562402,
+        "macro_f1_fractal_only": 0.2277387482773395
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "newsroom",
+          "temp": "1.0"
+        },
+        "n_train": 4997,
+        "n_val": 745,
+        "n_test": 1328,
+        "macro_f1_all": 0.522055672842286,
+        "macro_f1_fractal_only": 0.17408841679686574
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "scientific_papers",
+          "temp": "0.0"
+        },
+        "n_train": 4778,
+        "n_val": 785,
+        "n_test": 1360,
+        "macro_f1_all": 0.578388841476448,
+        "macro_f1_fractal_only": 0.19955196144197843
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "scientific_papers",
+          "temp": "0.5"
+        },
+        "n_train": 4755,
+        "n_val": 803,
+        "n_test": 1361,
+        "macro_f1_all": 0.5732383158016876,
+        "macro_f1_fractal_only": 0.24179988228552535
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "scientific_papers",
+          "temp": "1.0"
+        },
+        "n_train": 4794,
+        "n_val": 799,
+        "n_test": 1360,
+        "macro_f1_all": 0.570669559724342,
+        "macro_f1_fractal_only": 0.18900390177494839
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "wikipedia",
+          "temp": "0.0"
+        },
+        "n_train": 5066,
+        "n_val": 638,
+        "n_test": 1479,
+        "macro_f1_all": 0.5668943174470408,
+        "macro_f1_fractal_only": 0.14681384641369452
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "wikipedia",
+          "temp": "0.5"
+        },
+        "n_train": 5043,
+        "n_val": 643,
+        "n_test": 1461,
+        "macro_f1_all": 0.5736391825719691,
+        "macro_f1_fractal_only": 0.21824778529257943
+      },
+      {
+        "cell": {
+          "generator": "mistral_7b",
+          "domain": "wikipedia",
+          "temp": "1.0"
+        },
+        "n_train": 5083,
+        "n_val": 650,
+        "n_test": 1489,
+        "macro_f1_all": 0.559696314195594,
+        "macro_f1_fractal_only": 0.17348402077703096
+      }
+    ],
+    "distribution_all_features": {
+      "n_cells_valid": 30,
+      "mean": 0.5674828744395259,
+      "std": 0.031974631997921575,
+      "min": 0.5057944282057187,
+      "p25": 0.553323193634273,
+      "median": 0.5657187373979384,
+      "p75": 0.5776679396825463,
+      "max": 0.6656823544680738
+    },
+    "distribution_fractal_only": {
+      "n_cells_valid": 30,
+      "mean": 0.20045881242973046,
+      "std": 0.025694642003188318,
+      "min": 0.14681384641369452,
+      "p25": 0.18364746366565138,
+      "median": 0.20002561458984042,
+      "p75": 0.21559292314015194,
+      "max": 0.25535962772330423
+    }
+  },
+  "direction_of_risk_for_rebuttal": "Residual population structure in the un-demeaned fractal_only=0.1981 result means that number is PARTLY leakage -- true Var(delta) is smaller than 0.1981 implies, which STRENGTHENS the paper's conclusion. The number genuinely at risk is the 0.5816 all-features reference and the 'about a sixth of the distance' framing built on it."
+}
