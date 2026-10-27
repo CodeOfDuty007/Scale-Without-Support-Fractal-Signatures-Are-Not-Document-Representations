@@ -13,7 +13,7 @@ for detecting machine-generated text.
 | Reliability ρ of per-document **S** | 0.063 | 0.050 | `reference_outputs/stats/t0_t1_MERGED_table.json` → `<scorer>_S.interleave.rho_pooled` |
 | Reliability ρ of per-document **H** | 0.576 | 0.547 | same file → `<scorer>_H.interleave.rho_pooled` |
 | Var(document term δ) vs Var(estimator term η), **S** | 0.0105 vs 0.328 | — | `t0_variance_components.json` → `features.gemma_S` |
-| Tokens needed for ρ ≥ 0.60 (fBm floor, lower bound) | S: 6,400 · H: 800 | S: 6,400 · H: 800 | `t2_n_star_composition.json` → `*.N_star_fBm_floor` |
+| Tokens needed for ρ ≥ 0.60 (fBm floor: H point estimate, S lower bound) | S: 6,400 · H: 800 | S: 6,400 · H: 800 | `t2_n_star_composition.json` → `*.N_star_fBm_floor` |
 | RAID transfer: AUROC gain from the fractal family | +0.0240 | | `t5_raid_group_mean.json` → `reference_gap_all85_minus_all_minus_fractal31.gap` |
 
 ---

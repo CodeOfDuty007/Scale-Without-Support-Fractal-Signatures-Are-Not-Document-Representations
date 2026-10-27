@@ -159,10 +159,13 @@ def compose_n_star():
                    "note": ("N* is the first N_grid point in {100..12800} where the "
                             "Spearman-Brown-corrected rho(N) crosses 0.60 (matching the bar's "
                             "own pre-registration on the corrected coefficient, not raw r); "
-                            "true crossing may lie between grid points. This fBm-arm N* is a "
-                            "LOWER BOUND: the empirical half-level Var(eta) from T0 (real text) "
-                            "is larger than this fBm floor's Var(eta) at comparable N, so the "
-                            "real-text N* is at or above this number, not below it."),
+                            "true crossing may lie between grid points. "
+                            + ("For S, this fBm-arm N* is a lower bound: at N=400 the "
+                               "composed reliability overstates measured split-half reliability "
+                               "by 3.7–4.0x, so correcting the optimistic floor moves the "
+                               "crossing farther out." if est_key == "S" else
+                               "For H, this fBm-arm N* is a point estimate under the "
+                               "validated fBm noise floor.")),
                    }
         print(f"\n[N*] {q}: Var(delta)={var_delta:.5f}  N*={n_star}")
         for row in out[q]["curve"]:
